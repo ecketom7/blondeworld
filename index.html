@@ -13,18 +13,7 @@
     <p class="text">Tippe auf die drei Punkte ⋯ oben rechts und öffne im Browser</p>
   </div>
 
-  <script src="config.js"></script>
-  <script>
-    const ua = navigator.userAgent.toLowerCase();
-    const isTikTok = ua.includes("tiktok");
-
-    if (!isTikTok) {
-      // Nur im echten Browser weiterleiten
-      window.location.href = FANVUE_URL;
-    }
-    // Wenn TikTok → nichts tun, Landingpage bleibt sichtbar
-  </script>
-
 </body>
 </html>
+
 
