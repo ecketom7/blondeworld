@@ -1,30 +1,28 @@
-# blondeworld
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Link</title>
+  <title>Info</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="style.css">
 
   <script>
+    // User-Agent erkennen
     const ua = navigator.userAgent.toLowerCase();
     const isTikTok = ua.includes("tiktok");
 
-    // NUR im echten Browser weiterleiten
     if (!isTikTok) {
-      window.location.replace("https://friendly-bonbon-2e9127.netlify.app/");
+      // NUR im echten Browser weiterleiten
+      window.location.replace("https://DEINEDOMAIN.de");
     }
+    // Wenn TikTok → nichts tun (Landingpage bleibt sichtbar)
   </script>
 </head>
 <body>
-
   <div class="container">
     <img src="arrow.png" class="arrow" alt="">
     <p class="text">Tap here → Open in browser</p>
   </div>
-
 </body>
 </html>
 
