@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #ffffff;
+  background: #fff;
   font-family: Arial, sans-serif;
 }
 
@@ -8,14 +8,17 @@ body {
   position: relative;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .text {
-  position: absolute;
-  top: 20px;
-  right: 70px;
   font-size: 16px;
   color: #000;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .arrow {
@@ -23,6 +26,4 @@ body {
   top: 10px;
   right: 10px;
   width: 50px;
-  transform: rotate(0deg);
 }
-
